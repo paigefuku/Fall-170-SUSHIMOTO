@@ -98,9 +98,19 @@ article h2 {
     color:#000000;
 
 }
+article div.backgroundWhite h2, article div.backgroundWhite h4, article div.backgroundWhite p {
+    opacity: 1;
+} 
 div.backgroundWhite h4, div.backgroundWhite p {
     width:70%;
     margin:auto;
+    
+}
+div.backgroundWhite h2 {
+    float:none;
+    clear:both;
+    width:80%;
+    margin: auto;
     
 }
 div.backgroundWhite h4 {
@@ -114,10 +124,16 @@ padding-bottom: 1.5em;
     text-transform:lowercase;
 }
 
+
+/* ARTICLE STYLING*/
+
+
 .important {
 	 width:100%;
 	 border-top:5px solid black;
 	 margin:2em 0 0 0;
+    float:none;
+    clear:both;
  }
 
 .hours {
@@ -183,6 +199,28 @@ footer .left {
 	color:white;
 	position:relative;
 	/*left:3em;*/
+}
+    article div.backgroundWhite h2 {
+    text-align:center;
+        margin:auto;
+        width:80%;
+        
+    }
+    div.category {
+    width:100%;
+    margin:auto;
+
+    }
+    
+  article div.category div.sectionright {
+    float:right;
+    width:45%;
+    
+
+}
+article div.category div.sectionleft {
+    float:left;
+    width:45%;
 }
 .directions {
 	float:right;
