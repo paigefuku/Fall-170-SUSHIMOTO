@@ -56,20 +56,24 @@ header.php
     </script>
 </head>
 
-<body wp_head();?>>
+<body wp_head();?>
 
 <!--BEGIN HEADER-->    
 <header>
-<div class="linkback"><a href="#"><!--BEGIN LINKBACK DIV--> 
+<div class="linkback"><a href="#">
+<!--BEGIN LINKBACK DIV--> 
 <div class="banner"><!--BEGIN BANNER DIV--> 
 
 <h1>SUSHI MOTO</h1>
 <h2>22946 Highway 99<br />Boohan Court #103<br />Edmonds WA 98026</h2>
+ 
+
 </div><!--END BANNER DIV--> 
     </a>
 </div><!--END LINKBACK DIV--> 
-
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'navigation', 'items_wrap' => '<ul id-"navigation-items" class="%2$s">%3$s</ul>',) ); ?>
     
+<div class="mainMenu">
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'navigation', 'items_wrap' => '<ul id-"navigation-items" class="%2$s">%3$s</ul>',) ); ?>
+</div>    
     
 </header><!--END HEADER-->
