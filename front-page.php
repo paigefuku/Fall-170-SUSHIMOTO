@@ -5,7 +5,7 @@ Author: Paige Fukuhara of Paige Fukuhara Design & Creative Services
 Author URI: http://paigefukuhara.com
 Description: Custom Wordpress Theme for David Oh of Sushimoto, in Edmonds Washington. 
 
-index.php
+front-page.php
 */
 
 get_header(); ?>    
@@ -16,12 +16,23 @@ get_header(); ?>
 <h2><a href="<?php the_permalink(); // link to the page or posting ?>" class="mainPageTitle"><?php the_title(); // get the page or posting title ?></a></h2>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); // start the loop ?>
 
-
-
+ 
 <?php the_content(''); // get page or posting written content ?>
-    
-<?php endwhile; endif; // end the loop ?>
-<!-- Begin resposiveslides script -->  
+
+   <script src="js/responsiveslides.min.js"></script>
+
+   <ul class="rslides">
+  <li><img src="images/sushim6.jpg" alt=""></li>
+  <li><img src="images/sushim1.jpg" alt=""></li>
+  <li><img src="images/sushim4.jpg" alt=""></li>
+  <li><img src="images/sushim2.jpg" alt=""></li>
+  <li><img src="images/sushim3.jpg" alt=""></li>
+  <li><img src="images/sushim5.jpg" alt=""></li>
+  <li><img src="images/sushim7.jpg" alt=""></li>
+  <li><img src="images/sushim8.jpg" alt=""></li>
+
+  
+</ul>
 <script>
   $(function() {
   $(".rslides").responsiveSlides({
@@ -40,11 +51,12 @@ get_header(); ?>
   $(function() {
     $(".rslides").responsiveSlides();
   });
-</script><!-- END resposiveslides script -->
+</script>
 
+<?php endwhile; endif; // end the loop ?>
 
     
 </div><!-- END "content"    div -->
-<small>index.php</small>    
+<small>front-page.php</small>    
 <?php get_footer(); ?> 
 

@@ -65,7 +65,7 @@ header.php
 <div class="banner"><!--BEGIN BANNER DIV--> 
 
 <h1>SUSHI MOTO</h1>
-<h2>22946 Highway 99<br />Boohan Court #103<br />Edmonds WA 98026</h2>
+<h2>Japanese Cuisine &amp; Sushi</h2>
  
 
 </div><!--END BANNER DIV--> 

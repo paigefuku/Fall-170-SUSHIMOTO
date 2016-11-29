@@ -46,8 +46,8 @@ style.css
 	}
 
 	.banner h1 {
-		padding:2.2em 0 0 0;
-		font-size:2em;
+		padding:1.5em 0 0 0;
+		font-size:3em;
 		text-align:center;
 		color: black;
        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
@@ -57,14 +57,27 @@ style.css
 	}
 
 	.banner h2 {
-        padding:.5em 0 1.2em 0;
+        padding:.5em 0 2em 0;
         text-align:center;
         font-size:1.2em;
         background-color:rgba(254,254,254,0.2);
         line-height:100%;
-        color:rgba(0,0,0,0.91),
+        color:rgba(0,0,0,0.91);
+        text-transform: uppercase;
 	}
+div.content h2  {
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
+    width: auto;
+    padding-top:.5em;
+    letter-spacing: 3px;
+}
+a.mainPageTitle {
+    text-decoration: none;
+    color:#000000;
 
+}
 /*	.bannerWords {
 		width:100%;
 		height:30px;
@@ -78,11 +91,13 @@ style.css
 
 .twitter-follow-button {
 opacity: 1;
+float:right;
+    padding:10px 20px 0 0;
 }
 
 div#navigation {
-    background-color:red;
-    opacity: .7;
+    background-color:#C02224;
+    opacity: .9;
     text-transform: uppercase;
 
 }
@@ -116,33 +131,26 @@ div#navigation ul.menu li a:hover {
 }
 /* ARTICLE STYLING*/
 
-article {
-	padding:2em 0 2em 0;
+div.content {
+	padding:2em 0 0 0;
 	width:90%;
 	background-color:black;
-	opacity:.8;
+	opacity:.9;
 	border-radius:15px;
 	margin:auto;
-	margin-bottom:2em;
+    padding-bottom:1em;
 	margin-top:2em;
 }
-article div.backgroundWhite {
+ div.backgroundWhite {
     background-color: #ffffff;
-    opacity:1;
+    opacity:.9;
     width:90%;
     margin:auto;
     border-radius:15px;
-    margin-bottom:1em;
-	margin-top:1em;
+    margin-bottom:1.5em;
+    padding-bottom:1em;
 }
-article h2 {
-    text-align: center;
-    margin:auto;
-    padding:1em 0;
-    text-transform: uppercase;
-    color:#000000;
 
-}
 article div.backgroundWhite h2, article div.backgroundWhite h4, article div.backgroundWhite p {
     opacity: 1;
 } 
@@ -151,20 +159,32 @@ div.backgroundWhite h4, div.backgroundWhite p {
     margin:auto;
     
 }
-div.backgroundWhite h2 {
+div.backgroundWhite h2.foodCategory {
     float:none;
     clear:both;
     width:80%;
     margin: auto;
-    
+    font-size:2em;
+     text-align: center;
+    padding:1em 0;
+    text-transform: uppercase;
+    color:#000000;
+    letter-spacing: normal;
+}
+div.backgroundWhite h3 {
+    text-transform: uppercase;
+    padding:0;
+    margin:0;
+    margin:auto;
 }
 div.backgroundWhite h4 {
-    padding-top: .25em;
-    letter-spacing: .1;
+    padding-top: .5em;
+    letter-spacing: 1px;
     
 }
 div.backgroundWhite p {
    font-size: .85em;
+    padding:0;
 padding-bottom: 1.5em;
     text-transform:lowercase;
 }
@@ -195,29 +215,45 @@ div.contactForm label {
     clear:both;
  }
 
-.hours {
+section.hours {
     text-transform: uppercase;
     color: #ffffff;
-    width:80%;
+    width:49%;
     text-align: center;
+    margin:0;
     margin:auto;
+ padding:0;
     padding:1em 0;
+    float:left;
+    
+}
+ section.hours h2 {
+ font-size:1.75em;
+   
 }
 
-.directions {
+section.directions {
     text-transform: uppercase;
     color: #ffffff;
-      width:80%;
+      width:49%;
     text-align: center;
-     margin:auto;
-    padding-bottom:1em;
+     margin:0;
+    margin:auto;
+    padding:0;
+    padding:1em 0;
+    float:right;
+
+}
+ section.directions h2 {
+ font-size:1.75em;
+   
 }
 
 footer {
 
 	text-align:center;
 	padding:1em 0 1em 0;
-	background-color:rgba(192,34,36,1.00);
+	background-color:rgba(192, 34, 36, 1.0);
 	height:60px;
 	font-size:.5em;
     text-transform: uppercase;
