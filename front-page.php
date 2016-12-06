@@ -12,27 +12,36 @@ get_header(); ?>
     
 
 <div class="content">
- 
+
+    <div class="backgroundWhite">
+        
+  <section id="openingWelcome">  
 <h2><a href="<?php the_permalink(); // link to the page or posting ?>" class="mainPageTitle"><?php the_title(); // get the page or posting title ?></a></h2>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); // start the loop ?>
 
  
-<?php the_content(''); // get page or posting written content ?>
 
-   <script src="js/responsiveslides.min.js"></script>
 
+   <script src="<?php bloginfo('template_directory'); ?>/responsiveslides.min.js"></script>
+   
+<h3>206-000-0000</h3>
+<h4>LUNCH IS SERVED FROM 11AM-2PM</h4>
+<h4>DINNER IS SERVED FROM 4PM-10PM</h4>
+<h4>PLEASE ALLOW 15 MINUTES FOR TAKEOUT ORDERS.</h4></section>
    <ul class="rslides">
-  <li><img src="images/sushim6.jpg" alt=""></li>
-  <li><img src="images/sushim1.jpg" alt=""></li>
-  <li><img src="images/sushim4.jpg" alt=""></li>
-  <li><img src="images/sushim2.jpg" alt=""></li>
-  <li><img src="images/sushim3.jpg" alt=""></li>
-  <li><img src="images/sushim5.jpg" alt=""></li>
-  <li><img src="images/sushim7.jpg" alt=""></li>
-  <li><img src="images/sushim8.jpg" alt=""></li>
+  <li><img src="<?php bloginfo('template_directory'); ?>/images/sushim1.jpg" alt=""></li>
+  <li><img src="<?php bloginfo('template_directory'); ?>/images/sushim2.jpg" alt=""></li>
+  <li><img src="<?php bloginfo('template_directory'); ?>/images/sushim3.jpg" alt=""></li>
+  <li><img src="<?php bloginfo('template_directory'); ?>/images/sushim4.jpg" alt=""></li>
+  <li><img src="<?php bloginfo('template_directory'); ?>/images/sushim5.jpg" alt=""></li>
+  <li><img src="<?php bloginfo('template_directory'); ?>/images/sushim6.jpg" alt=""></li>
+  <li><img src="<?php bloginfo('template_directory'); ?>/images/sushim7.jpg" alt=""></li>
+  <li><img src="<?php bloginfo('template_directory'); ?>/images/sushim8.jpg" alt=""></li>
 
   
 </ul>
+    </div>
+    </div>
 <script>
   $(function() {
   $(".rslides").responsiveSlides({

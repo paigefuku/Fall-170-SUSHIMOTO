@@ -56,7 +56,7 @@ header.php
     </script>
 </head>
 
-<body wp_head();?>
+<body <?php body_class();?>>
 
 <!--BEGIN HEADER-->    
 <header>

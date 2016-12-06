@@ -85,16 +85,32 @@ a.mainPageTitle {
 		opacity:.2;
 	}
 		*/
-/*
-*MENU STYLING - MOBILE 
-*/
+p .breadcrumb {
+    text-transform: uppercase;
+    font-size: .75em;
+    position: relative;
+    right:15%;
+    
+}
+p .breadcrumb a {
+    text-transform: uppercase;
+    color:rgb(192, 34, 36);
+    text-decoration: none;
+   
+}
+
+p .breadcrumb a:hover {
+  color:#000000;
+}
 
 .twitter-follow-button {
 opacity: 1;
 float:right;
     padding:10px 20px 0 0;
 }
-
+/*
+*MENU STYLING - MOBILE 
+*/
 div#navigation {
     background-color:#C02224;
     opacity: .9;
@@ -205,8 +221,21 @@ filter: alpha(opacity=100);
 div.contactForm label {
     text-transform: uppercase;
 }
-    
-    
+p a#catering {
+    text-align: center;
+    padding: 1em;
+}   
+a#catering {
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color:rgb(192, 34, 36);
+}   
+a#catering:hover {
+    color:red;
+    text-decoration: underline;
+} 
 .important {
 	 width:100%;
 	 border-top:5px solid black;
@@ -248,7 +277,65 @@ section.directions {
  font-size:1.75em;
    
 }
+section#openingWelcome {
 
+width:80%;
+    margin:auto;
+text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+section#openingWelcome h3 {
+font-size:1.75em;
+    letter-spacing: 2px;
+}
+section#openingWelcome h4 {
+font-size:.85em;
+    text-transform: none;
+}
+section#openingWelcome h4:last-child {
+
+    margin-bottom: 1em;
+    
+}
+
+section.searchbar {
+float:none;
+clear:both;
+width: 100%;
+margin:auto;
+
+}
+
+div.MIA {
+
+padding:20px;
+margin:auto;
+    
+}
+div.MIA h1 {
+text-align: center;
+    width:80%;
+    margin: auto;
+    padding: 10px;
+}
+div.MIA p {
+text-align: center;
+    width:60%;
+    text-transform: uppercase;
+    margin: auto;
+}
+div.MIA section.searchbar {
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
+div.searchResults {
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
 footer {
 
 	text-align:center;
@@ -268,7 +355,43 @@ footer .left {
 
 }
 
+/*---styling for SLIDESHOW---*/
+div.content div.backgroundWhite ul.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 90%;
+  padding: 0 0 1em 0;
+  margin: auto;
+  float:none;
+  right:1%;
+ 
+  }
 
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  margin:0 0 0 10px;
+opacity: 1;
+  }
 
 
 

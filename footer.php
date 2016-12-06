@@ -29,7 +29,10 @@ footer.php
        <p>website made by <a href="http://paigefukuhara.com">Paige Fukuhara</a></p>
     </div><!--END RIGHT-HAND SECTION, FOOTER -->
 
-
+     <section class="searchbar">
+        <h2>What can we help you find?</h2>
+        <?php get_search_form();?>
+    </section>
 </footer>
     
 <?php wp_footer();?>    
