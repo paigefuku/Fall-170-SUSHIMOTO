@@ -336,6 +336,18 @@ div.searchResults {
     margin:auto;
     text-align: center;
 }
+div.contactForm {
+text-transform: uppercase;
+}
+div.contactForm p.cateringOptions {
+text-align: uppercase;
+padding:5px;
+
+}
+.wpcf7-list-item {
+text-transform: uppercase;
+    display: block;
+}
 footer {
 
 	text-align:center;
